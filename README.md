@@ -24,7 +24,7 @@ Installation
 
 To install, download this repository and put it somewhere secure.  Put all desired plugins into the 'plugins/' directory.  Then run:
 
-````php install.php````
+`php install.php`
 
 And follow the prompts.
 
@@ -54,21 +54,19 @@ In the example, the status is set to 'normal' (you can use whatever statuses wor
 
 The filename must contain a hyphen, end in '.json', and be in the format:
 
-````name-sortingmetric.json````
+`name-sortingmetric.json`
 
 The 'name' portion can be whatever you want.  The 'sortingmetric' is probably best as a UNIX timestamp of some sort (e.g. `time()` or `microtime(true)` under PHP).
 
 Once you have your first JSON object in the /input directory, manually run:
 
-````php run.php````
+`php run.php`
 
 And verify that all users receive their first notification from the system.
 
 Finally, add the script to cron or other system task scheduler so that it runs every minute:
 
-````
-* * * * * /usr/bin/php /var/scripts/script-tracker/run.php > /dev/null 2>&1
-````
+`* * * * * /usr/bin/php /var/scripts/script-tracker/run.php > /dev/null 2>&1`
 
 About /logs
 -----------
@@ -83,10 +81,3 @@ Writing Plugins
 ---------------
 
 Look at the 'plugins/email_notify.php' plugin to see a simple example of a plugin.  Support files should go into the /support directory.  Most plugins, when correctly written, will be about the same size as the e-mail notification plugin, which weighs in at less than 100 lines of code.
-
-Background
-----------
-
-This whole system was designed, written, tested, and released in under a day.  I get too many automated e-mail notifications when things break and also was tired of dropping the same e-mail notification code everywhere.  Now I can write a single JSON file per app/script to a single location and only get notified one time when something breaks and then another notification after the problem gets fixed.
-
-And, of course, since this is an open source tool, you can also gain the same benefits.

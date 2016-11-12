@@ -3,7 +3,7 @@ Status Tracker
 
 A simple and elegant cron script and web application health status tracker written in PHP.  This tool allows cron scripts and web applications to rapidly report their status using a very simple JSON file storage mechanism.  The tool runs via cron and processes each report as it comes in.  Whenever the status changes, users are notified about the change.
 
-If you have cron scripts that run on a regular basis (e.g. every minute) and flood your inbox with a bajillion e-mails when things like network failures occur, then this tool is for you.  It is a superior system monitor because you only register the script changes you are actually interested in receiving.  Then only when the status changes are notifications sent out, which results in only two or three e-mails being sent instead of a zillion e-mails.
+If you have cron scripts that run on a regular basis (e.g. every minute) and flood your inbox with a bajillion e-mails when things like network failures occur, then this tool is for you.  It is a superior system monitor because you only register the script changes you are actually interested in receiving.  Notifications sent out only when the status changes, which results in only two or three e-mails being sent instead of a zillion e-mails.
 
 Quiet inboxes are happy inboxes.
 

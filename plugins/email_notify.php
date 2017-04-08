@@ -50,6 +50,13 @@
 
 			$message .= "<p>The status for " . $name . ($prevstatus !== false ? " has been changed from '" . $prevstatus . "' to '" . $data["status"] . "'." : " is now '" . $data["status"] . "' and was previously unregistered.") . "</p>\n\n";
 
+			if (isset($data["info"]))
+			{
+				$message .= "<pre>";
+				$message .= htmlspecialchars(json_encode($data["info"], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+				$message .= "</pre>\n\n";
+			}
+
 			$message .= "<p>";
 			$message .= "Host:  " . gethostname() . "<br>\n";
 			$message .= "Time (local):  " . date("D, F j, Y g:i:s A", $ts) . "<br>\n";

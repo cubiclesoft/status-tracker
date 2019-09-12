@@ -7,6 +7,8 @@ If you have cron scripts that run on a regular basis (e.g. every minute) and flo
 
 Quiet inboxes are happy inboxes.
 
+[![Donate](https://cubiclesoft.com/res/donate-shield.png)](https://cubiclesoft.com/donate/)
+
 Features
 --------
 

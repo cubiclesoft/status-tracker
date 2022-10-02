@@ -7,6 +7,8 @@ If you have cron scripts that run on a regular basis (e.g. every minute) and flo
 
 Quiet inboxes are happy inboxes.
 
+NOTE:  This product is considered largely obsolete in favor of [xcron](https://github.com/cubiclesoft/xcron), which can do the same thing as this product but far more elegantly and with a much richer feature set.
+
 [![Donate](https://cubiclesoft.com/res/donate-shield.png)](https://cubiclesoft.com/donate/) [![Discord](https://img.shields.io/discord/777282089980526602?label=chat&logo=discord)](https://cubiclesoft.com/product-support/github/)
 
 Features
